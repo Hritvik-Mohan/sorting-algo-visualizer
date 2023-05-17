@@ -36,7 +36,7 @@ export default function Navbar() {
                 </div>
 
                 <div>
-                    <button className='nav-button'>Visualize</button>
+                    <button onClick={bubbleSort} disabled={sorting} className='nav-button'>Visualize</button>
                 </div>
             </form>
         </div>
