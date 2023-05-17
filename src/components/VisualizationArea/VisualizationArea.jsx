@@ -42,9 +42,7 @@ export default function VisualizationArea() {
             }
         }
 
-        setTimeout(() => {
-            setSorting(false); // Sorting completed  
-        }, newArray.length * (newArray.length - 1) * 100);
+        setSorting(false); // Sorting completed  
     }
 
     const delay = (time) => {
@@ -55,9 +53,9 @@ export default function VisualizationArea() {
         <>
             <div className='navbar'>
                 <form className='navbar-container'>
-                    <div>
+                    {/* <div>
                         <div>
-                            {/* <label>Select Algorithm</label> */}
+                            <label>Select Algorithm</label>
                         </div>
                         <select name="cars" id="cars">
                             <option value="">Bubble Sort</option>
@@ -66,7 +64,7 @@ export default function VisualizationArea() {
                             <option value="">Quick Sort</option>
                             <option value="">Merge Sort</option>
                         </select>
-                    </div>
+                    </div> */}
                     {/* 
                 <div>
                     <div>
@@ -87,13 +85,10 @@ export default function VisualizationArea() {
                     </div>
 
                     <div>
-                        <button type='button' onClick={bubbleSort} className='nav-button'>Visualize</button>
+                        <button type='button' onClick={bubbleSort} disabled={sorting} className='nav-button'>Visualize</button>
                     </div>
                 </form>
             </div>
-            {/* <button onClick={bubbleSort} disabled={sorting}>
-                {sorting ? 'Sorting...' : 'Start Bubble Sort'}
-            </button> */}
             <div className='visualization-area'>
                 {
                     arr.map((num, i) => (
