@@ -1,0 +1,8 @@
+.visualization-area {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 4rem auto;
+    justify-content: center;
+    gap: 1rem;
+}
