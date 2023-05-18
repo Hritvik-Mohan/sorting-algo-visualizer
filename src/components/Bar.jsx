@@ -2,7 +2,7 @@ import './Bar.css'
 
 export default function Bar({ value }) {
 
-    console.log(value);
+    // console.log(value);
 
     const barStyle = {
         "backgroundColor": "#23f7",
